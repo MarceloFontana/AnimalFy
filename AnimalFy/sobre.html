@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/foto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Sobre mim</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo_adobe_express.svg" alt="" id="logo"></a>
+        <nav>
+            <ul id="lista">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre mim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div><img 
+        src="img/atenas.jpg" alt="banner-img" id="banner-img">
+    </div>
+    <section class="container secundario">
+        <img src="img/fotoMarcelo.jpg" alt="Um monitor e um celular com o alura plus aberto" class="secundario__imagem" id="fotoMarcelo">
+        <div class="container__descricao" >
+            <h2 class="descricao__titulo" >Marcelo Luiz Fontana</h2>
+            <p class="descricao__texto">Oii, me chamo Marcelo Luiz Fontana, tenho 21 anos de idade e sou estudante de programação e tecnologia!
+                🔭😄🔭 Estudante de: Ciências da Computação -6/8 -Unisinos. Análise e Desenvolvimento de Sistemas -4/6- Unisinos. 🌱 Apaixonado por Front-End.
+                -🔭 Atualmente estudando para ser um desenvolvedor (Front-End).
+                -🌱 Estudando HTML5, CSS3 e JavaScript.
+                -👯 Estágiando atualemnte no Zaffari, como estágiario de Dev - Aplicação Comercial.
+                -😄 Pronouns: ele/dele.</p>
+        </div>
+    </section>
+    <section class="dispositivos">
+        <h2 class="dispositivos__titulo" alt=""formas de responsividade do site>Disponivel nos seus dispositivos favoritos</h2>
+        <ul class="dispositivos__lista">
+            <li>
+                <img src="img/computador.png" alt="icone de computadores">
+                <h3 class="lista__item">Computadores</h3>
+            </li>
+            <li>
+                <img src="img/celular.png" alt="icone de celular">
+                <h3 class="lista__item">Celular</h3>
+            </li>
+        </ul>
+    </section>
+    </main>
+    <footer class="rodape">
+        <ul class="rodape__lista">
+            <li class="lista__link">
+                <a href="#">Idioma</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Dispositivos Comapatíveis</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Politica de privacidade</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Proteção de dados no Brasil</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Ajuda</a>
+            </li>
+        </ul>
+        <p class="rodape__texto">* 2023 Todos os direitos reservados ao aluno realizante desse trabalho.</p>
+    </footer>
+    <script>
+        window.alert("Olá bem vindo a pagina que fala sobre mim!")
+        if (window.location.pathname.includes("sobre.html")) {
+        
+            const resposta = window.confirm("Deseja realmente visitar a pagina Sobre mim?");
+
+        if (!resposta) {
+            window.history.back();
+        }
+    }
+    </script>
+</body>
+</html>
